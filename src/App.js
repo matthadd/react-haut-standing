@@ -5,8 +5,7 @@ import { useState } from 'react';
 
 function App() {
 
-  const [errorMessage, setErrorMessage] = useState("");
-  const [roomId, setRoomId] = useState(0);
+  const [roomId, setRoomId] = useState();
   const [gameState, setGameState] = useState();
   
 
@@ -49,9 +48,11 @@ const game = async () => {
 
 <button onClick={game}>  Game  </button>
 <button onClick={getState}>  Get State </button>
-<p/>
+<button onClick={getState}>  Roll Dices </button>
 
-      </header>
+
+
+</header>
     </div>
   );
 }
